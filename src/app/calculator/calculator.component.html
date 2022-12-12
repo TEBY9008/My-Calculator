@@ -1,0 +1,21 @@
+<div class="container text-center">
+    <div>
+        <br/>
+        <label>Argumento 1 :</label>
+        <input type="number" [(ngModel)]="number1"/>
+        <br/><br/>
+        <label>Argumento 2 :</label>
+        <input type="number" [(ngModel)]="number2"/>
+    </div>
+    <div>
+        <br/>
+        <input type="button" value="Sumar" (click)="suma()" class="btn btn-primary"/>
+        <input type="button" value="Restar" (click)="subs()" class="btn btn-primary"/>
+        <input type="button" value="Multiplicar" (click)="mult()" class="btn btn-primary"/>
+    </div>
+    
+    <div>
+        <br/>
+        <p>Resultado: {{ result }}</p>
+      </div>
+    <div>
